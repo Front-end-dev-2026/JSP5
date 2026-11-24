@@ -3,32 +3,24 @@ const bankaccount = {
     balance: 1000,
     accountOpen: true,
 
-    getBalance(balance) {
-        return this.balance;
-    },
+
 
     deposit(input) {
-        return this.balance;
+        return this.balance += input;
     },
 
     withdrawal(output) {
-        if (amount <= balance)
-        return this.balance;
-    },
-
-    getAccountName(holder) {
-        return this.accountName;
+        return this.balance -= output;
     },
 
     accountError() {
+        if (this.accountName !== "John") 
         return "Account error";
     },
 
     exitAccount() {
-        if (accountOpen === false) {
+        if (this.accountOpen === false) 
         return "Account closed";
-        }
-
     }
 
-}
+    };
